@@ -10,14 +10,13 @@ import argparse
 from pathlib import Path
 
 import numpy as np
-from tqdm import tqdm
-
 from sensorium.data import MOUSE_IDS
 from sensorium.data import ROCHEFORT_LAB
 from sensorium.data import SENSORIUM_OLD
 from sensorium.data import get_tier_ids
 from sensorium.data import load_trial
 from sensorium.utils import h5
+from tqdm import tqdm
 
 SKIP = 50
 MAX_FRAME = 300

@@ -5,13 +5,12 @@ from pathlib import Path
 
 import numpy as np
 from einops import rearrange
-from tqdm import tqdm
-
 from sensorium.data import METADATA_DIR
 from sensorium.data import MOUSE_IDS
 from sensorium.data import STATISTICS_DIR
 from sensorium.data import get_tier_ids
 from sensorium.data import load_trial
+from tqdm import tqdm
 
 
 def measure(array: np.ndarray, axis: int | tuple):

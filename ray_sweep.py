@@ -10,6 +10,7 @@ from typing import Dict
 
 import ray
 import wandb
+from hpo import get_search_space
 from ray import air
 from ray import tune
 from ray.air import FailureConfig
@@ -20,7 +21,6 @@ from ray.tune.search.optuna import OptunaSearch
 from wandb.util import generate_id
 
 import train as trainer
-from hpo import get_search_space
 from viv1t.utils import utils
 
 os.environ["RAY_memory_monitor_refresh_ms"] = "0"
