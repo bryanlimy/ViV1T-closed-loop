@@ -178,7 +178,9 @@ def main():
         for mouse_id in ["A", "D", "E"]:
             fig_dir = Path(f"figures/receptive_field/{model}/{mouse_id}")
             os.makedirs(fig_dir, exist_ok=True)
-            estimate_mouse(label=model, mouse_id=mouse_id, output_dir=output_dir, fig_dir=fig_dir)
+            estimate_mouse(
+                label=model, mouse_id=mouse_id, output_dir=output_dir, fig_dir=fig_dir
+            )
 
 
 if __name__ == "__main__":

@@ -63,7 +63,7 @@ def Gaussian2d(
 
 
 def fit_aRF(
-    arguments: tuple[np.ndarray, np.ndarray, np.ndarray, np.random.RandomState]
+    arguments: tuple[np.ndarray, np.ndarray, np.ndarray, np.random.RandomState],
 ) -> np.ndarray:
     aRF, x, y, rng = arguments
 

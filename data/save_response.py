@@ -1,8 +1,8 @@
 """
-Helper script to save all responses to h5 files for quicker loading and 
+Helper script to save all responses to h5 files for quicker loading and
 metric calculations.
 
-All responses are cropped to have a maximum of 300 frames and skip the first 
+All responses are cropped to have a maximum of 300 frames and skip the first
 50 frames, to match the Sensorium 2023 challenge metric calculation.
 """
 

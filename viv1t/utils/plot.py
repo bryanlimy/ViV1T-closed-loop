@@ -1,6 +1,5 @@
 import os
 import random
-from math import ceil
 from pathlib import Path
 
 import matplotlib
