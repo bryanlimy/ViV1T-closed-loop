@@ -37,6 +37,10 @@ ViV1T/
   in_vivo_analysis/
   misc/
   most_exciting_stimulus/
+  tuning_contextual_modulation/
+  tuning_direction/
+  tuning_feedbackRF/
+  tuning_retinotopy/
   viv1t/
     data/
     model/
@@ -48,16 +52,11 @@ ViV1T/
     metrics.py
     optimizer.py
     scheduler.py
-  tuning_contextual_modulation/
-  tuning_direction/
-  tuning_feedbackRF/
-  tuning_retinotopy/
   .gitignore
   pyproject.toml
   README.md
-  requirements.txt
-  train.py
   predict.py
+  train.py
   ...
 ```
 ---
