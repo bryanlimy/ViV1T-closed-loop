@@ -4,7 +4,7 @@ Code for the ViV1T model and paper "Movie-trained transformer reveals novel resp
 
 Contributors: [Bryan M. Li](https://bryanli.io), [Wolf De Wulf](https://wulfdewolf.github.io/), [Danai Katsanevaki](https://sidb.org.uk/nathalie-rochefort/danai-katsanevaki), [Arno Onken](https://homepages.inf.ed.ac.uk/aonken/), [Nathalie L. Rochefort](https://rochefortlab.co.uk/).
 
-![ViV1T](figures/figure1/figure1.svg)
+![ViV1T](figures/repo/figure1.png)
 
 ## Acknowledgments
 
