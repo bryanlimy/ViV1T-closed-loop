@@ -1,0 +1,4 @@
+*.pkl
+*.h5
+figures/
+.ipynb_checkpoints/
