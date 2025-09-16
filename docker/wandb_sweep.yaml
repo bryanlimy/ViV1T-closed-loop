@@ -1,0 +1,68 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: bryan-5
+  labels:
+    app: bryan-sensorium
+    eidf/user: bli-infk8s
+    kueue.x-k8s.io/queue-name: informatics-user-queue
+spec:
+  completions: 1
+  parallelism: 1
+  template:
+    metadata:
+      name: bryan-sensorium
+      labels:
+        eidf/user: bli-infk8s
+        kueue.x-k8s.io/queue-name: informatics-user-queue
+        kueue.x-k8s.io/priority-class: batch-workload-priority
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: bryan
+          image: bryanlimy/pytorch:v2.6.0
+          imagePullPolicy: IfNotPresent
+          command: ["zsh", "-c", "--"]
+          args:
+            - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch main && cd sensorium2023 && git checkout 46341b1 && pip install --no-cache-dir -e . && for i in {1..4}; do python wandb_sweep.py --sweep_id=04h31gou; done
+          env:
+            - name: WANDB_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: bryanlimy-wandb-key
+                  key: wandb_api_key
+            - name: GIT_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: bryanlimy-git-token
+                  key: git_token
+            - name: REDIS_PORT
+              value: "6379"
+            - name: OMP_NUM_THREADS
+              value: "8"
+          volumeMounts:
+            - mountPath: /dev/shm
+              name: dshm
+            - mountPath: /home/storage
+              name: storage
+          resources:
+            requests:
+              cpu: 16
+              memory: 128Gi
+              nvidia.com/gpu: 1
+            limits:
+              cpu: 16
+              memory: 128Gi
+              nvidia.com/gpu: 1
+      volumes:
+        - name: dshm
+          emptyDir:
+            medium: Memory
+            sizeLimit: 100Gi
+        - name: storage
+          persistentVolumeClaim:
+            claimName: bryanlimy-pvc-v5
+      nodeSelector:
+        nvidia.com/gpu.product: NVIDIA-H100-80GB-HBM3
+        # nvidia.com/gpu.product: NVIDIA-A100-SXM4-80GB
+        # nvidia.com/gpu.product: NVIDIA-A100-SXM4-40GB

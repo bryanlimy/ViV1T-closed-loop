@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  generateName: bryan-cpu-
+  labels:
+    eidf/user: bli-infk8s
+    kueue.x-k8s.io/queue-name: eidf029ns-user-queue
+    # kueue.x-k8s.io/priority-class: short-workload-high-priority
+spec:
+  containers:
+    - name: bryan-cpu
+      image: bryanlimy/pytorch:v2.7.0
+      imagePullPolicy: IfNotPresent
+      command: ["zsh", "-c", "--"]
+      args:
+        - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && while true; do sleep 60; done;
+      env:
+        - name: WANDB_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: bryanli-wandb-key
+              key: wandb_api_key
+        - name: GIT_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: bryanli-git-token
+              key: git_token
+      volumeMounts:
+        - mountPath: /dev/shm
+          name: dshm
+        - mountPath: /home/storage
+          name: storage
+      resources:
+        limits:
+          nvidia.com/gpu: 0
+          cpu: 8
+          memory: 16Gi
+        requests:
+          nvidia.com/gpu: 0
+          cpu: 8
+          memory: 16Gi
+  restartPolicy: Never
+  volumes:
+    - emptyDir:
+        medium: Memory
+        sizeLimit: 100Gi
+      name: dshm
+    - name: storage
+      persistentVolumeClaim:
+        claimName: bryanli-pvc

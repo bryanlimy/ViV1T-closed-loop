@@ -1,0 +1,1 @@
+This folder consist of Dockerfile and kubernetes configurations that we used during model development.

@@ -1,0 +1,75 @@
+[project]
+name = "viv1t"
+version = "1.0"
+authors = [
+    { name="Bryan M. Li", email="bryan.li@ed.ac.uk" },
+    { name="Wolf De Wulf", email="wolf.de.wulf@ed.ac.uk" },
+]
+description = "Code to Movie-trained transformer reveals novel response properties to dynamic stimuli in mouse visual cortex."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+]
+keywords = [
+    "transformer",
+    "neuro-ai",
+    "neuroai",
+    "sensorium2023",
+    "visual-response-prediction",
+    "sensorium",
+    "most-exciting-input",
+    "most-exciting-stimulus",
+    "most-exciting-video"
+]
+
+dependencies = [
+    "torch==2.8.0",
+    "torchvision",
+    "ray[train]",
+    "tqdm",
+    "h5py",
+    "pytz",
+    "isort",
+    "numpy",
+    "scipy",
+    "wandb",
+    "einops",
+    "plotly",
+    "GPUtil",
+    "ipympl",
+    "pandas",
+    "optuna",
+    "pillow",
+    "pyarrow",
+    "seaborn",
+    "PyDrive",
+    "jupyter",
+    "imageio",
+    "torchinfo",
+    "matplotlib==3.9.*",
+    "ruamel.yaml",
+    "oauth2client",
+    "scikit-image",
+    "scikit-learn",
+    "opencv-python",
+    "black[jupyter]",
+    "schedulefree"
+]
+
+[build-system]
+requires = ["setuptools>=62.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["viv1t"]
+
+[project.urls]
+"Homepage" = "https://github.com/bryanlimy/ViV1T-closed-loop"
+"Bug Tracker" = "https://github.com/bryanlimy/ViV1T-closed-loop/issues"

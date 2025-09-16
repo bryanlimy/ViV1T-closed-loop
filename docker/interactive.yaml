@@ -1,0 +1,70 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: bryan-debug-
+  labels:
+    app: bryan-sensorium
+    eidf/user: bli-infk8s
+    kueue.x-k8s.io/queue-name: eidf029ns-user-queue
+spec:
+  completions: 1
+  parallelism: 1
+  template:
+    metadata:
+      name: bryan-sensorium
+      labels:
+        eidf/user: bli-infk8s
+        kueue.x-k8s.io/queue-name: eidf029ns-user-queue
+        kueue.x-k8s.io/priority-class: short-workload-high-priority
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: bryan
+          image: bryanlimy/pytorch:v2.6.0
+          imagePullPolicy: Always
+          command: ["zsh", "-c", "--"]
+          args:
+            - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && while true; do sleep 60; done;
+          env:
+            - name: WANDB_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: bryanli-wandb-key
+                  key: wandb_api_key
+            - name: GIT_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: bryanli-git-token
+                  key: git_token
+            - name: REDIS_PORT
+              value: "6379"
+            - name: OMP_NUM_THREADS
+              value: "8"
+            - name: TORCH_LOGS
+              value: "recompiles,graph_breaks"
+          volumeMounts:
+            - mountPath: /dev/shm
+              name: dshm
+            - mountPath: /home/storage
+              name: storage
+          resources:
+            requests:
+              cpu: 16
+              memory: 128Gi
+              nvidia.com/gpu: 1
+            limits:
+              cpu: 16
+              memory: 128Gi
+              nvidia.com/gpu: 1
+      volumes:
+        - name: dshm
+          emptyDir:
+            medium: Memory
+            sizeLimit: 100Gi
+        - name: storage
+          persistentVolumeClaim:
+            claimName: bryanli-pvc
+      nodeSelector:
+        nvidia.com/gpu.product: NVIDIA-H100-80GB-HBM3
+        # nvidia.com/gpu.product: NVIDIA-A100-SXM4-80GB
+        # nvidia.com/gpu.product: NVIDIA-A100-SXM4-40GB
