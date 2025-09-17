@@ -13,13 +13,13 @@ Here in particular, we will focus on contextual modulation at the neuron level.
     <tr>
       <th rowspan="2" style="width: 1%; writing-mode: vertical-lr; white-space: nowrap;">Mouse</th>
       <th rowspan="2" style="width: 1%; writing-mode: vertical-lr; white-space: nowrap;">Neuron</th>
-      <th rowspan="2" style="width: 22%;">Most<br>exciting<br>centre</th>
-      <th colspan="3" style="width: 67%;">Most exciting surrounds</th>
+      <th rowspan="2" style="width: 24%;">Most<br>exciting<br>centre</th>
+      <th colspan="3" style="width: 72%;">Most exciting surrounds</th>
     </tr>
     <tr>
-      <th style="width: 22%;">Grating<br>video</th>
-      <th style="width: 22%;">Natural<br>video</th>
-      <th style="width: 22%;">Generated<br>video</th>
+      <th style="width: 24%;">Grating<br>video</th>
+      <th style="width: 24%;">Natural<br>video</th>
+      <th style="width: 24%;">Generated<br>video</th>
     </tr>
   </thead>
   <tbody>
@@ -68,14 +68,14 @@ and that ViV1T-generated surrounds allow for even more.
     <tr>
       <th rowspan="2" style="width: 1%; writing-mode: vertical-lr; white-space: nowrap;">Mouse</th>
       <th rowspan="2" style="width: 1%; writing-mode: vertical-lr; white-space: nowrap;">Neuron</th>
-      <th rowspan="2" style="width: 16%;">Most exciting centre</th>
-      <th colspan="4" style="width: 72%;">Most exciting surrounds</th>
+      <th rowspan="2" style="width: 18%;">Most<br>exciting<br>centre</th>
+      <th colspan="4" style="width: 80%;">Most exciting surrounds</th>
     </tr>
     <tr>
-      <th style="width: 16%;">Natural image</th>
-      <th style="width: 16%;">Natural video</th>
-      <th style="width: 16%;">Generated image</th>
-      <th style="width: 16%;">Generated video</th>
+      <th style="width: 18%;">Natural image</th>
+      <th style="width: 18%;">Natural video</th>
+      <th style="width: 18%;">Generated image</th>
+      <th style="width: 18%;">Generated video</th>
     </tr>
   </thead>
   <tbody>
