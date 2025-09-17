@@ -9,7 +9,7 @@ Contributors: [Bryan M. Li](https://bryanli.io), [Wolf De Wulf](https://wulfdewo
 <table>
   <thead>
     <tr>
-      <th rowspan="2">Most exciting center</th>
+      <th rowspan="2">Most exciting centre</th>
       <th colspan="3">Most exciting surrounds</th>
     </tr>
     <tr>
@@ -28,13 +28,13 @@ Contributors: [Bryan M. Li](https://bryanli.io), [Wolf De Wulf](https://wulfdewo
   </tbody>
 </table>
 
-[most_exciting_stimulus/README.md](figures/repo/most_exciting_stimuli/README.md) shows more examples of model-selected and model-generated most exciting center surround stimuli (MEIs, MEVs).
+[most_exciting_stimulus/README.md](figures/repo/most_exciting_stimuli/README.md) shows more examples of model-selected and model-generated most exciting centre surround stimuli (MEIs, MEVs).
 
 ---
 
 ## Acknowledgments
 
-We sincerely thank [Turishcheva et al.](https://arxiv.org/abs/2305.19654) for organizing the [Sensorium 2023 challenge](https://www.sensorium-competition.net/) and for making their high-quality, large-scale mouse V1 recordings publicly available. The structure of this codebase is based on and inspired by [bryanlimy/V1T](https://github.com/bryanlimy/V1T), [bryanlimy/ViV1T](https://github.com/bryanlimy/ViV1T), [ecker-lab/sensorium_2023](https://github.com/ecker-lab/sensorium_2023), [sinzlab/neuralpredictors](https://github.com/sinzlab/neuralpredictors) and [sinzlab/nnfabrik](https://github.com/sinzlab/nnfabrik).
+We sincerely thank [Turishcheva et al.](https://arxiv.org/abs/2305.19654) for organising the [Sensorium 2023 challenge](https://www.sensorium-competition.net/) and for making their high-quality, large-scale mouse V1 recordings publicly available. The structure of this codebase is based on and inspired by [bryanlimy/V1T](https://github.com/bryanlimy/V1T), [bryanlimy/ViV1T](https://github.com/bryanlimy/ViV1T), [ecker-lab/sensorium_2023](https://github.com/ecker-lab/sensorium_2023), [sinzlab/neuralpredictors](https://github.com/sinzlab/neuralpredictors) and [sinzlab/nnfabrik](https://github.com/sinzlab/nnfabrik).
 
 ---
 
