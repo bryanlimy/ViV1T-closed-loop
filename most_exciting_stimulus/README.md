@@ -8,93 +8,117 @@ Here in particular, we will focus on contextual modulation at the neuron level.
 
 ### Natural and ViV1T-generated surrounds elicit stronger contextual modulation than gratings (Figure 5A)
 
-<table>
+<table style="width: 100%; table-layout: fixed;">
   <thead>
     <tr>
-      <th rowspan="2">Most exciting center</th>
-      <th colspan="3">Most exciting surrounds</th>
+      <th rowspan="2" style="width: 1%; writing-mode: vertical-lr; white-space: nowrap;">Mouse</th>
+      <th rowspan="2" style="width: 1%; writing-mode: vertical-lr; white-space: nowrap;">Neuron</th>
+      <th rowspan="2" style="width: 22%;">Most<br>exciting<br>center</th>
+      <th colspan="3" style="width: 67%;">Most exciting surrounds</th>
     </tr>
     <tr>
-      <th>Grating video</th>
-      <th>Natural video</th>
-      <th>Generated video</th>
+      <th style="width: 22%;">Grating<br>video</th>
+      <th style="width: 22%;">Natural<br>video</th>
+      <th style="width: 22%;">Generated<br>video</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center.gif" alt="Grating center"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_grating_video_surround.gif" alt="Grating video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_natural_video_surround.gif" alt="Natural video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_generated_video_surround.gif" alt="Generated video surround"></td>
+      <td>L</td>
+      <td>050</td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center.gif" alt="Grating center" style="width: 100%;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_grating_video_surround.gif" alt="Grating video surround" style="width: 100%;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_natural_video_surround.gif" alt="Natural video surround" style="width: 100%;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_generated_video_surround.gif" alt="Generated video surround" style="width: 100%;"></td>
     </tr>
     <tr>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center.gif" alt="Grating center"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center_grating_video_surround.gif" alt="Grating video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center_natural_video_surround.gif" alt="Natural video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center_generated_video_surround.gif" alt="Generated video surround"></td>
+      <td>N</td>
+      <td>054</td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center.gif" alt="Grating center" style="width: 100%;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center_grating_video_surround.gif" alt="Grating video surround" style="width: 100%;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center_natural_video_surround.gif" alt="Natural video surround" style="width: 100%;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center_generated_video_surround.gif" alt="Generated video surround" style="width: 100%;"></td>
     </tr>
     <tr>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center.gif" alt="Grating center"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center_grating_video_surround.gif" alt="Grating video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center_natural_video_surround.gif" alt="Natural video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center_generated_video_surround.gif" alt="Generated video surround"></td>
+      <td>N</td>
+      <td>059</td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center.gif" alt="Grating center" style="width: 100%;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center_grating_video_surround.gif" alt="Grating video surround" style="width: 100%;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center_natural_video_surround.gif" alt="Natural video surround" style="width: 100%;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center_generated_video_surround.gif" alt="Generated video surround" style="width: 100%;"></td>
     </tr>
     <tr>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center.gif" alt="Grating center"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_grating_video_surround.gif" alt="Grating video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_natural_video_surround.gif" alt="Natural video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_generated_video_surround.gif" alt="Generated video surround"></td>
+      <td>L</td>
+      <td>071</td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center.gif" alt="Grating center" style="width: 100%;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_grating_video_surround.gif" alt="Grating video surround" style="width: 100%;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_natural_video_surround.gif" alt="Natural video surround" style="width: 100%;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_generated_video_surround.gif" alt="Generated video surround" style="width: 100%;"></td>
     </tr>
   </tbody>
 </table>
+
+Quantifying the responses of many neurons to these stimuli, we found that natural surrounds typically allow for more excitation than grating surrounds,
+and that ViV1T-generated surrounds allow for even more.
 
 ### Dynamic surrounds elicit stronger contextual modulation than static surrounds (Figure 5E)
 
-<table>
+<table style="width: 100%; table-layout: fixed;">
   <thead>
     <tr>
-      <th rowspan="2">Most exciting center</th>
-      <th colspan="4">Most exciting surrounds</th>
+      <th rowspan="2" style="width: 1%; writing-mode: vertical-lr; white-space: nowrap;">Mouse</th>
+      <th rowspan="2" style="width: 1%; writing-mode: vertical-lr; white-space: nowrap;">Neuron</th>
+      <th rowspan="2" style="width: 16%;">Most exciting center</th>
+      <th colspan="4" style="width: 72%;">Most exciting surrounds</th>
     </tr>
     <tr>
-      <th>Natural image</th>
-      <th>Natural video</th>
-      <th>Generated image</th>
-      <th>Generated video</th>
+      <th style="width: 16%;">Natural image</th>
+      <th style="width: 16%;">Natural video</th>
+      <th style="width: 16%;">Generated image</th>
+      <th style="width: 16%;">Generated video</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron003_natural_center.gif" alt="Grating center"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron003_natural_center_natural_image_surround.gif" alt="Grating video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron003_natural_center_natural_video_surround.gif" alt="Natural video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron003_natural_center_generated_image_surround.gif" alt="Generated video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron003_natural_center_generated_video_surround.gif" alt="Generated video surround"></td>
+      <td>L</td>
+      <td>003</td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron003_natural_center.gif" alt="Center" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron003_natural_center_natural_image_surround.gif" alt="Natural image surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron003_natural_center_natural_video_surround.gif" alt="Natural video surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron003_natural_center_generated_image_surround.gif" alt="Generated image surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron003_natural_center_generated_video_surround.gif" alt="Generated video surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
     </tr>
     <tr>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_natural_center.gif" alt="Grating center"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_natural_center_natural_image_surround.gif" alt="Grating video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_natural_center_natural_video_surround.gif" alt="Natural video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_natural_center_generated_image_surround.gif" alt="Generated video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_natural_center_generated_video_surround.gif" alt="Generated video surround"></td>
+      <td>N</td>
+      <td>054</td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_natural_center.gif" alt="Center" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_natural_center_natural_image_surround.gif" alt="Natural image surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_natural_center_natural_video_surround.gif" alt="Natural video surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_natural_center_generated_image_surround.gif" alt="Generated image surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_natural_center_generated_video_surround.gif" alt="Generated video surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
     </tr>
     <tr>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_natural_center.gif" alt="Grating center"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_natural_center_natural_image_surround.gif" alt="Grating video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_natural_center_natural_video_surround.gif" alt="Natural video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_natural_center_generated_image_surround.gif" alt="Generated video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_natural_center_generated_video_surround.gif" alt="Generated video surround"></td>
+      <td>N</td>
+      <td>059</td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_natural_center.gif" alt="Center" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_natural_center_natural_image_surround.gif" alt="Natural image surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_natural_center_natural_video_surround.gif" alt="Natural video surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_natural_center_generated_image_surround.gif" alt="Generated image surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_natural_center_generated_video_surround.gif" alt="Generated video surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
     </tr>
     <tr>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_natural_center.gif" alt="Grating center"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_natural_center_natural_image_surround.gif" alt="Grating video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_natural_center_natural_video_surround.gif" alt="Natural video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_natural_center_generated_image_surround.gif" alt="Generated video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_natural_center_generated_video_surround.gif" alt="Generated video surround"></td>
+      <td>L</td>
+      <td>071</td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_natural_center.gif" alt="Center" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_natural_center_natural_image_surround.gif" alt="Natural image surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_natural_center_natural_video_surround.gif" alt="Natural video surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_natural_center_generated_image_surround.gif" alt="Generated image surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_natural_center_generated_video_surround.gif" alt="Generated video surround" style="width: 100%; height: 100%; object-fit: contain;"></td>
     </tr>
   </tbody>
 </table>
-
+Quantifying the responses of many neurons to these stimuli, we found that dynamic surrounds typically allow for more excitation than static surrounds,
+and that ViV1T-generated dynamic surrounds allow for more excitation than natural ones.
 
 ### Code
 All of these were generated using the code in this folder:
