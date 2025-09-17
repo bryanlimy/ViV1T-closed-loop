@@ -1,6 +1,104 @@
-The `most_exciting_stimulus/` folder mostly consist of code to predict and generate most-exciting stimulus, images (MEIs) and videos (MEVs) using the movie-trained model (**Figure 5** and **Supplemental Figure 4**).
+# Using ViV1T to generate stimuli and test hypotheses
 
-Note that you have to estimate the aRFs of the model prior to predicting and generating MEIs and MEVs. See [tuning_retinotopy/README.md](../tuning_retinotopy/README.md).
+In this folder you can find the code to generate most-exciting stimuli using ViV1T (Figure 5 and Supplemental Figure 4).
+Note that we typically center the generated stimuli on the receptive field of the neuron, thus you need to have those extracted somehow.
+We use the model-estimated receptive fields (aRF), see [tuning_retinotopy/README.md](../tuning_retinotopy/README.md).
+
+Let us first look at some examples from the paper.
+Here in particular, we will focus on contextual modulation at the neuron level.
+
+## Natural and ViV1T-generated surrounds elicit stronger contextual modulation than gratings (Fig5A)
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Most exciting center</th>
+      <th colspan="3">Most exciting surrounds</th>
+    </tr>
+    <tr>
+      <th>Grating video</th>
+      <th>Natural video</th>
+      <th>Generated video</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center.gif" alt="Grating center"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_grating_video_surround.gif" alt="Grating video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_natural_video_surround.gif" alt="Natural video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_generated_video_surround.gif" alt="Generated video surround"></td>
+    </tr>
+    <tr>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center.gif" alt="Grating center"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center_grating_video_surround.gif" alt="Grating video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center_natural_video_surround.gif" alt="Natural video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center_generated_video_surround.gif" alt="Generated video surround"></td>
+    </tr>
+    <tr>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center.gif" alt="Grating center"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center_grating_video_surround.gif" alt="Grating video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center_natural_video_surround.gif" alt="Natural video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center_generated_video_surround.gif" alt="Generated video surround"></td>
+    </tr>
+    <tr>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center.gif" alt="Grating center"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_grating_video_surround.gif" alt="Grating video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_natural_video_surround.gif" alt="Natural video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_generated_video_surround.gif" alt="Generated video surround"></td>
+    </tr>
+  </tbody>
+</table>
+
+## Dynamic surrounds elicit stronger contextual modulation than static surrounds (FIG5E)
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Most exciting center</th>
+      <th colspan="4">Most exciting surrounds</th>
+    </tr>
+    <tr>
+      <th>Natural image</th>
+      <th>Natural video</th>
+      <th>Generated image</th>
+      <th>Generated video</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron003_natural_center.gif" alt="Grating center"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron003_natural_center_natural_image_surround.gif" alt="Grating video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron003_natural_center_natural_video_surround.gif" alt="Natural video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron003_natural_center_generated_image_surround.gif" alt="Generated video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron003_natural_center_generated_video_surround.gif" alt="Generated video surround"></td>
+    </tr>
+    <tr>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_natural_center.gif" alt="Grating center"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_natural_center_natural_image_surround.gif" alt="Grating video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_natural_center_natural_video_surround.gif" alt="Natural video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_natural_center_generated_image_surround.gif" alt="Generated video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron054_natural_center_generated_video_surround.gif" alt="Generated video surround"></td>
+    </tr>
+    <tr>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_natural_center.gif" alt="Grating center"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_natural_center_natural_image_surround.gif" alt="Grating video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_natural_center_natural_video_surround.gif" alt="Natural video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_natural_center_generated_image_surround.gif" alt="Generated video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseN_neuron059_natural_center_generated_video_surround.gif" alt="Generated video surround"></td>
+    </tr>
+    <tr>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_natural_center.gif" alt="Grating center"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_natural_center_natural_image_surround.gif" alt="Grating video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_natural_center_natural_video_surround.gif" alt="Natural video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_natural_center_generated_image_surround.gif" alt="Generated video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseL_neuron071_natural_center_generated_video_surround.gif" alt="Generated video surround"></td>
+    </tr>
+  </tbody>
+</table>
+
+
+## Code
+All of these were generated using the code in this folder:
 
 - [estimate_neuron_reliability.py](estimate_neuron_reliability.py) estimate the neuron reliability before predicting and generating its MEIs and MEVs.
 - [estimate_natural_stimuli_spectrum.py](estimate_natural_stimuli_spectrum.py) estimate the spatiotemporal power spectrum of the natural movies in the training set. This is needed to compute the KL divergence between generated stimuli and natural stimuli.
