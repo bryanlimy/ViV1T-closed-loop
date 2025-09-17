@@ -7,7 +7,7 @@ We use the model-estimated receptive fields (aRF), see [tuning_retinotopy/README
 Let us first look at some examples from the paper.
 Here in particular, we will focus on contextual modulation at the neuron level.
 
-## Natural and ViV1T-generated surrounds elicit stronger contextual modulation than gratings (Figure 5A)
+### Natural and ViV1T-generated surrounds elicit stronger contextual modulation than gratings (Figure 5A)
 
 <table>
   <thead>
@@ -49,7 +49,7 @@ Here in particular, we will focus on contextual modulation at the neuron level.
   </tbody>
 </table>
 
-## Dynamic surrounds elicit stronger contextual modulation than static surrounds (Figure 5E)
+### Dynamic surrounds elicit stronger contextual modulation than static surrounds (Figure 5E)
 
 <table>
   <thead>
@@ -97,7 +97,7 @@ Here in particular, we will focus on contextual modulation at the neuron level.
 </table>
 
 
-## Code
+### Code
 All of these were generated using the code in this folder:
 
 - [estimate_neuron_reliability.py](estimate_neuron_reliability.py) estimate the neuron reliability before predicting and generating its MEIs and MEVs.
