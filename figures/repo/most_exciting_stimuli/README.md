@@ -3,17 +3,10 @@
 In this folder you can find some example stimuli we generated using ViV1T to test certain hypotheses.
 Here in particular, we will focus on contextual modulation at the neuron level.
 
-## 1. Most-exciting center stimuli, extracted from data
-For each neuron, we can look for stimuli that excite it the most, when presented at the center of their receptive field.
-Since predicting with V1V1T is very fast, we can perform an exhaustive search by predicting for all stimuli in the dataset and finding the most-exciting centers:
-
-| | | | |
-|---|---|--------------------------------------------------------------------------------------------------------------------------|---|
-| ![neuron 003](figures/repo/most_exciting_stimuli/mouseL_neuron003_grating_center.gif) | ![neuron 071](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center.gif) | ![neuron 050](figures/repo/most_exciting_stimuli/mouseL_neuron050_grating_center.gif) | ![neuron 054](figures/repo/most_exciting_stimuli/mouseL_neuron054_grating_center.gif) |
-
-
-## 2. Most-exciting center stimuli, model-generated
-
-## 3. Most-exciting surround stimuli, extracted from data
-
-## 4. Most-exciting surround stimuli, model-generated
+| Grating center | Grating video | Natural video | Generated video |
+|----------------|---------------|---------------|-----------------|
+| ![Grating center](/figures/repo/most_exciting_stimuli/mouseL_neuron003_grating_center.gif) | ![Grating video surround](/figures/repo/most_exciting_stimuli/mouseL_neuron003_grating_center_grating_video_surround.gif) | ![Natural video surround](/figures/repo/most_exciting_stimuli/mouseL_neuron003_grating_center_natural_video_surround.gif) | ![Generated video surround](/figures/repo/most_exciting_stimuli/mouseL_neuron003_grating_center_generated_video_surround.gif) |
+| ![Grating center](/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center.gif) | ![Grating video surround](/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_grating_video_surround.gif) | ![Natural video surround](/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_natural_video_surround.gif) | ![Generated video surround](/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_generated_video_surround.gif) |
+| ![Grating center](/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center.gif) | ![Grating video surround](/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center_grating_video_surround.gif) | ![Natural video surround](/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center_natural_video_surround.gif) | ![Generated video surround](/figures/repo/most_exciting_stimuli/mouseN_neuron054_grating_center_generated_video_surround.gif) |
+| ![Grating center](/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center.gif) | ![Grating video surround](/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center_grating_video_surround.gif) | ![Natural video surround](/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center_natural_video_surround.gif) | ![Generated video surround](/figures/repo/most_exciting_stimuli/mouseN_neuron059_grating_center_generated_video_surround.gif) |
+| ![Grating center](/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center.gif) | ![Grating video surround](/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_grating_video_surround.gif) | ![Natural video surround](/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_natural_video_surround.gif) | ![Generated video surround](/figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_generated_video_surround.gif) |
