@@ -20,15 +20,15 @@ Contributors: [Bryan M. Li](https://bryanli.io), [Wolf De Wulf](https://wulfdewo
   </thead>
   <tbody>
     <tr>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center.gif" alt="Grating center"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_grating_video_surround.gif" alt="Grating video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_natural_video_surround.gif" alt="Natural video surround"></td>
-      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_generated_video_surround.gif" alt="Generated video surround"></td>
+      <td width="25%"><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center.gif" alt="Grating center"></td>
+      <td width="25%"><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_grating_video_surround.gif" alt="Grating video surround"></td>
+      <td width="25%"><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_natural_video_surround.gif" alt="Natural video surround"></td>
+      <td width="25%"><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_generated_video_surround.gif" alt="Generated video surround"></td>
     </tr>
   </tbody>
 </table>
 
-[most_exciting_stimulus/README.md](figures/repo/most_exciting_stimuli/README.md) shows more examples of model-selected and model-generated most exciting centre surround stimuli (MEIs, MEVs).
+[most_exciting_stimulus/README.md](most_exciting_stimulus/README.md) shows more examples of model-selected and model-generated most exciting centre surround stimuli (MEIs, MEVs).
 
 ---
 
