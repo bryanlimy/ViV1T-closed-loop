@@ -28,7 +28,7 @@ Contributors: [Bryan M. Li](https://bryanli.io), [Wolf De Wulf](https://wulfdewo
   </tbody>
 </table>
 
-[most_exciting_stimulus/README.md](most_exciting_stimulus/README.md) shows more examples of model-selected and model-generated most exciting centre surround stimuli (MEIs, MEVs).
+[most_exciting_stimulus/README.md](most_exciting_stimulus/README.md) shows more examples of model-selected and model-generated most exciting centre surround stimuli (MEIs, MEVs), which we then verified in semi-closed-loop _in vivo_ experiments.
 
 ---
 
