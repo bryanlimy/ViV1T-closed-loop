@@ -6,9 +6,9 @@ Contributors: [Bryan M. Li](https://bryanli.io), [Wolf De Wulf](https://wulfdewo
 
 ![ViV1T](figures/repo/figure1.png)
 
-| Grating center | Grating video | Natural video | Generated video |
-|---|---|---|---|
-| ![Grating center](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center.gif) | ![Grating video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_grating_video_surround.gif) | ![Natural video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center.gif) | ![Generated video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_generated_video_surround.gif) |
+| Grating center | Grating video | Natural video                                                                                                            | Generated video |
+|---|---|--------------------------------------------------------------------------------------------------------------------------|---|
+| ![Grating center](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center.gif) | ![Grating video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_grating_video_surround.gif) | ![Natural video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_natural_video_surround.gif) | ![Generated video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_generated_video_surround.gif) |
 
 [README](link) show more examples of model-selected and model-generated most exciting stimuli (MEIs, MEVs).
 
