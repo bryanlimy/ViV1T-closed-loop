@@ -15,7 +15,7 @@ data/
   README.md
   save_response.py
 ```
-- [compute_metadata.py](compute_metadata.py) compute the statistics (`min`, `max`, `mean`, `median`) of each variable (video, responses, pupil centers, behaviors) from the training set and store them in [viv1t/data/metadata/statistics/](../viv1t/data/metadata/statistics). These statistics are used to train and inference the model.
+- [compute_metadata.py](compute_metadata.py) compute the statistics (`min`, `max`, `mean`, `median`) of each variable (video, responses, pupil centres, behaviours) from the training set and store them in [viv1t/data/metadata/statistics/](../viv1t/data/metadata/statistics). These statistics are used to train and inference the model.
 - [download_GIN.py](download_GIN.py) is a script to download the Sensorium 2023 dataset from [gin.g-node.org/pollytur/Sensorium2023Data](https://gin.g-node.org/pollytur/Sensorium2023Data) and [gin.g-node.org/pollytur/sensorium_2023_dataset](https://gin.g-node.org/pollytur/sensorium_2023_dataset).
 - [save_response.py](save_response.py) save recorded responses into a single `.h5` file per animal for quicker analysis, such as computing the single trial correlation and/or computing the orientation/direction tuning curves.
 
@@ -75,12 +75,12 @@ data/
 - `data/`: includes the variables that were recorded during the experiment. The experimental variables are saved as a collection of NumPy arrays. Each NumPy array contains the value of that variable at a specific image presentation (i.e. trial). Note that the name of the files does not contain any information about the order or time at which the trials took place in experimental time. They are randomly ordered.
   - `videos`: This directory contains NumPy arrays where each single `X.npy` contains the video that was shown to the mouse in trial X.
   - `responses`: This directory contains NumPy arrays where each single `X.npy` contains the deconvolved calcium traces (i.e. responses) recorded from the mouse in trial X in response to the particular presented image.
-  - `behavior`: Behavioral variables include pupil dilation and running speed. The directory contain NumPy arrays (of size 1 x 2) where each single `X.npy` contains the behavioral variables (in the same order that was mentioned earlier) for trial X.
-  - `pupil_center`: the eye position of the mouse, estimated as the center of the pupil. The directory contain NumPy arrays (of size 1 x 2) for horizontal and vertical eye positions.
+  - `behavior`: Behavioral variables include pupil dilation and running speed. The directory contain NumPy arrays (of size 1 x 2) where each single `X.npy` contains the behavioural variables (in the same order that was mentioned earlier) for trial X.
+  - `pupil_center`: the eye position of the mouse, estimated as the centre of the pupil. The directory contain NumPy arrays (of size 1 x 2) for horizontal and vertical eye positions.
 - `meta/`: includes metadata of the experiment.
   - `neurons`: This directory contains neuron-specific information. Below is a list of important variables in this directory
     - `cell_motor_coordinates.npy`: contains the position (x, y, z) of each neuron in the cortex, given in microns.
-  - `statistics`: This directory contains statistics (i.e. mean, median, etc.) of the experimental variables (i.e. behavior, images, pupil_center, and responses).
+  - `statistics`: This directory contains statistics (i.e. mean, median, etc.) of the experimental variables (i.e. behaviour, images, pupil_center, and responses).
     Note: The statistics of the responses are or particular importance, because we provide the deconvolved calcium traces here in the responses.
     However, for the evaluation of submissions in the competition, we require the responses to be standardized (i.e. `r = r/(std_r)`).
   - `trials`: This directory contains trial-specific meta data.

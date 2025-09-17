@@ -5,4 +5,4 @@ Note that you have to estimate the aRFs of the model prior to making predictions
 - [predict_grating.py](predict_grating.py) inference the movie-trained model(s) to predict responses to centre, iso-surround and cross-surround gratings where the centre of the stimuli is adjusted based on the RF of each individual neuron (**Figure 2**).
 - [predict_grating_population.py](predict_grating.py) inference the movie-trained model(s) to predict responses to centre, iso-surround and cross-surround gratings where the centre of the stimuli is adjusted based on the population RF (**Figure 4**).
 - [estimate_contextual_modulation.py](estimate_contextual_modulation.py) estimate the centre-surround contextual modulation of the predicted responses.
-- [visualize_contextual_modulation.py](visualize_contextual_modulation.py) visualize the center-surround contextual modulation from the predicted responses (**Figure 2**).
+- [visualize_contextual_modulation.py](visualize_contextual_modulation.py) visualize the centre-surround contextual modulation from the predicted responses (**Figure 2**).

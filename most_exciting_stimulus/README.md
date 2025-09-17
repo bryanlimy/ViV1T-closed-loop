@@ -1,7 +1,7 @@
 # Using ViV1T to generate stimuli and test hypotheses
 
 In this folder you can find the code to generate most-exciting stimuli using ViV1T (**Figure 5** and **Supplemental Figure 4**).
-Note that we center the stimuli to the estimated receptive field of the neuron. We use the model-estimated artificial receptive fields (aRF), see [tuning_retinotopy/README.md](../tuning_retinotopy/README.md).
+Note that we centre the stimuli to the estimated receptive field of the neuron. We use the model-estimated artificial receptive fields (aRF), see [tuning_retinotopy/README.md](../tuning_retinotopy/README.md).
 
 Let us first look at some examples from the paper.
 Here in particular, we will focus on contextual modulation at the neuron level.
@@ -13,7 +13,7 @@ Here in particular, we will focus on contextual modulation at the neuron level.
     <tr>
       <th rowspan="2" style="width: 1%; writing-mode: vertical-lr; white-space: nowrap;">Mouse</th>
       <th rowspan="2" style="width: 1%; writing-mode: vertical-lr; white-space: nowrap;">Neuron</th>
-      <th rowspan="2" style="width: 22%;">Most<br>exciting<br>center</th>
+      <th rowspan="2" style="width: 22%;">Most<br>exciting<br>centre</th>
       <th colspan="3" style="width: 67%;">Most exciting surrounds</th>
     </tr>
     <tr>
@@ -68,7 +68,7 @@ and that ViV1T-generated surrounds allow for even more.
     <tr>
       <th rowspan="2" style="width: 1%; writing-mode: vertical-lr; white-space: nowrap;">Mouse</th>
       <th rowspan="2" style="width: 1%; writing-mode: vertical-lr; white-space: nowrap;">Neuron</th>
-      <th rowspan="2" style="width: 16%;">Most exciting center</th>
+      <th rowspan="2" style="width: 16%;">Most exciting centre</th>
       <th colspan="4" style="width: 72%;">Most exciting surrounds</th>
     </tr>
     <tr>
@@ -127,10 +127,10 @@ All of these were generated using the code in this folder:
 - [estimate_natural_stimuli_spectrum.py](estimate_natural_stimuli_spectrum.py) estimate the spatiotemporal power spectrum of the natural movies in the training set. This is needed to compute the KL divergence between generated stimuli and natural stimuli.
 - single neuron most-exciting stimuli [single_neuron/](single_neuron)
   - most-exciting grating stimuli [single_neuron/grating_stimulus](single_neuron/grating_stimulus)
-    - [predict_center_surround_gratings.py](single_neuron/grating_stimulus/predict_center_surround_gratings.py) predict center-surround gratings to find the combination of center and surround gratings that elicit the strongest response.
+    - [predict_center_surround_gratings.py](single_neuron/grating_stimulus/predict_center_surround_gratings.py) predict centre-surround gratings to find the combination of centre and surround gratings that elicit the strongest response.
     [predict_natural_surround_with_grating_center.py](single_neuron/grating_stimulus/predict_natural_surround_with_grating_center.py) predict and find the natural video surround with the most-exciting grating centre fixed that elicits the strongest response.
   - most-exciting natural stimuli [single_neuron/natural_stimulus](single_neuron/natural_stimulus)
-    - [predict_natural_center.py](single_neuron/natural_stimulus/predict_natural_center.py) predict and find the natural center that elicits the strongest response.
+    - [predict_natural_center.py](single_neuron/natural_stimulus/predict_natural_center.py) predict and find the natural centre that elicits the strongest response.
     [predict_natural_surround.py](single_neuron/natural_stimulus/predict_natural_surround.py) predict and find the natural video surround with the most-exciting natural centre fixed that elicits the strongest response.
   - [generate_center_surround.py](single_neuron/generate_center_surround.py) generate the most-exciting image (MEI) and/or video (MEV) surround with the most-exciting grating/natural centre fixed.
 - population most-exciting stimuli [population/](population) mirrors the single neuron folder structure but predict and generate stimuli to the population response.
