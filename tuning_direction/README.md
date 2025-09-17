@@ -1,4 +1,4 @@
-The `tuning_direction/` folder mostly consist of code to compute the direction/orientation tuning and spatial organization of mouse V1 presented in **Figure 2**, **Supplemental Figure 1** and **Supplemental Figure 2**.
+The `tuning_direction/` folder mostly consists of code to compute the direction/orientation tuning and spatial organization of mouse V1 presented in **Figure 2**, **Supplemental Figure 1** and **Supplemental Figure 2**.
 
 - [estimate_selectivity_indexes.py](estimate_selectivity_indexes.py) estimate the direction and orientation selectivity indexes (DSI and OSI) of the recorded data as well as predictions from different models.
 - [extract_gabor_features.py](extract_gabor_features.py) extract directional Gabor grating parameters from the drifting Gabor stimuli in the Sensorium 2023 as their ground-truth was not shared.

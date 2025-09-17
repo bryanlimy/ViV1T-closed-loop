@@ -1,6 +1,6 @@
 # Movie-trained transformer reveals novel response properties to dynamic stimuli in mouse visual cortex
 
-Code for the ViV1T model and paper "Movie-trained transformer reveals novel response properties to dynamic stimuli in mouse visual cortex". 
+Code for the ViV1T model and paper "Movie-trained transformer reveals novel response properties to dynamic stimuli in mouse visual cortex".
 
 Contributors: [Bryan M. Li](https://bryanli.io), [Wolf De Wulf](https://wulfdewolf.github.io/), [Danai Katsanevaki](https://sidb.org.uk/nathalie-rochefort/danai-katsanevaki), [Arno Onken](https://homepages.inf.ed.ac.uk/aonken/), [Nathalie L. Rochefort](https://rochefortlab.co.uk/).
 
@@ -10,33 +10,33 @@ Contributors: [Bryan M. Li](https://bryanli.io), [Wolf De Wulf](https://wulfdewo
 |---|---|--------------------------------------------------------------------------------------------------------------------------|---|
 | ![Grating center](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center.gif) | ![Grating video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_grating_video_surround.gif) | ![Natural video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_natural_video_surround.gif) | ![Generated video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_generated_video_surround.gif) |
 
-[README](link) show more examples of model-selected and model-generated most exciting stimuli (MEIs, MEVs).
+[most_exciting_stimulus/README.md](figures/repo/most_exciting_stimuli/README.md) show more examples of model-selected and model-generated most exciting stimuli (MEIs, MEVs).
 
 ---
 
 ## Acknowledgments
 
-We sincerely thank [Turishcheva et al.](https://arxiv.org/abs/2305.19654) for organizing the [Sensorium 2023 challenge](https://www.sensorium-competition.net/) and for making their high-quality, large-scale mouse V1 recordings publicly available. The structure of this codebase is based on and inspired by [bryanlimy/V1T](https://github.com/bryanlimy/V1T), [bryanlimy/ViV1T](https://github.com/bryanlimy/ViV1T), [ecker-lab/sensorium_2023](https://github.com/ecker-lab/sensorium_2023), [sinzlab/neuralpredictors](https://github.com/sinzlab/neuralpredictors) and [sinzlab/nnfabrik](https://github.com/sinzlab/nnfabrik). 
+We sincerely thank [Turishcheva et al.](https://arxiv.org/abs/2305.19654) for organizing the [Sensorium 2023 challenge](https://www.sensorium-competition.net/) and for making their high-quality, large-scale mouse V1 recordings publicly available. The structure of this codebase is based on and inspired by [bryanlimy/V1T](https://github.com/bryanlimy/V1T), [bryanlimy/ViV1T](https://github.com/bryanlimy/ViV1T), [ecker-lab/sensorium_2023](https://github.com/ecker-lab/sensorium_2023), [sinzlab/neuralpredictors](https://github.com/sinzlab/neuralpredictors) and [sinzlab/nnfabrik](https://github.com/sinzlab/nnfabrik).
 
 ---
 
 ## File structure
-The codebase is divided into its own (mostly) self-contained folders to evaluate different aspects/properties of the trained model (direction tuning, size tuning, etc.). The following list shows you the overall organisation of the codebase and the code used for each figure and/or analysis presented in the paper.
+The codebase is divided into its own (mostly) self-contained folders to evaluate different aspects/properties of the trained model (direction tuning, size tuning, etc.). The following list shows the overall organisation of the codebase and the code used for each figure and/or analysis presented in the paper.
 - Check [data/README.md](data/README.md) for more information about the datasets and how to store them.
 - [train.py](train.py) is the main pipeline to train the model.
 - [predict.py](predict.py) is the code to inference the trained model on the test set(s).
 - [viv1t/](viv1t) contains code to construct the model, save and load model weights, compute various metrics to evaluate the model, generate low-dimensional parametric stimuli, etc.
 - [misc/](misc) contains scripts for extracting metadata and visualisations that are useful for all the analyses. See [misc/README.md](misc/README.md), you might find some of the scripts helpful too.
-- [tuning_retinotopy/](tuning_retinotopy) estimate the artificial receptive fields (aRFs) of each _in silico_ neuron the models were trained on (**Figure 7**). The aRFs are used to estimate the centre of the receptive field for subsequent analyses. See [tuning_retinotopy/README.md](tuning_retinotopy/README.md).
+- [tuning_retinotopy/](tuning_retinotopy) estimates the artificial receptive fields (aRFs) of each _in silico_ neuron the models were trained on (**Figure 7**). The aRFs are used to estimate the centre of the receptive field for subsequent analyses. See [tuning_retinotopy/README.md](tuning_retinotopy/README.md).
 - [tuning_direction/](tuning_direction) evaluates the direction tuning and spatial organisation of the trained models (**Figure 2**). See [tuning_direction/README.md](tuning_direction/README.md).
 - [tuning_contextual_modulation/](tuning_contextual_modulation) evaluates the centre-surround contextual modulation properties of the trained models, mostly replicating the _in vivo_ experiments from [Keller et al. 2020](https://www.cell.com/neuron/fulltext/S0896-6273(20)30891-6) using the movie-trained model (**Figure 2**). See [tuning_contextual_modulation/README.md](tuning_contextual_modulation/README.md).
 - [tuning_feedbackRF/](tuning_feedbackRF) evaluates the feedback-dependent contextual modulation of the trained models, mostly replicating the _in vivo_ experiments from [Keller et al. 2020](https://www.nature.com/articles/s41586-020-2319-4) using the movie-trained model (**Figure 3**). See [tuning_feedbackRF/README.md](tuning_feedbackRF/README.md).
 - [most_exciting_stimulus/](most_exciting_stimulus) contains code to find the most exciting grating and natural centre-surround stimuli to single neuron and population responses. It also contains the code to generate the most exciting images and videos (MEIs and MEVs, **Figure 5** and **Supplemental Figure 4**). See [most_exciting_stimulus/README.md](most_exciting_stimulus/README.md).
-- [in_vivo_analysis/](in_vivo_analysis) contains to code to analyse the _in vivo_ experiments we conducted to verify the predictions made by the movie-trained ViV1T, including low vs high contrast centre-surround contextual modulation, generating MEIs and MEVs, etc. (**Figure 4**, **Figure 5**, **Supplemental Figure 3** and **Supplemental Figure 4**). See [in_vivo_analysis/README.md](in_vivo_analysis/README.md).
+- [in_vivo_analysis/](in_vivo_analysis) contains code to analyse the _in vivo_ experiments we conducted to verify the predictions made by the movie-trained ViV1T, including low vs. high contrast centre-surround contextual modulation, generating MEIs and MEVs, etc. (**Figure 4**, **Figure 5**, **Supplemental Figure 3** and **Supplemental Figure 4**). See [in_vivo_analysis/README.md](in_vivo_analysis/README.md).
 - Check [.gitignore](.gitignore) for the ignored files.
 
 ```
-ViV1T/
+ViV1T-closed-loop/
   data/
     sensorium/
     rochefort-lab/
@@ -76,7 +76,7 @@ ViV1T/
   ```bash
   conda create -n viv1t python=3.12
   ```
-- Activate `viv1t` virtual environment
+- Activate the `viv1t` virtual environment
   ```bash
   conda activate viv1t
   ```
@@ -88,7 +88,7 @@ ViV1T/
 - Alternatively, you can see the dockerfile we used [docker/Dockerfile](docker/Dockerfile).
 
 ### Train model
-- Activate `viv1t` environment
+- Activate the `viv1t` environment
   ```
   conda activate viv1t
   ```
