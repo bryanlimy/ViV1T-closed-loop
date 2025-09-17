@@ -6,11 +6,29 @@ Contributors: [Bryan M. Li](https://bryanli.io), [Wolf De Wulf](https://wulfdewo
 
 ![ViV1T](figures/repo/figure1.png)
 
-| Grating center | Grating video | Natural video                                                                                                            | Generated video |
-|---|---|--------------------------------------------------------------------------------------------------------------------------|---|
-| ![Grating center](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center.gif) | ![Grating video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_grating_video_surround.gif) | ![Natural video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_natural_video_surround.gif) | ![Generated video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_generated_video_surround.gif) |
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Most exciting center</th>
+      <th colspan="3">Most exciting surrounds</th>
+    </tr>
+    <tr>
+      <th>Grating video</th>
+      <th>Natural video</th>
+      <th>Generated video</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center.gif" alt="Grating center"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_grating_video_surround.gif" alt="Grating video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_natural_video_surround.gif" alt="Natural video surround"></td>
+      <td><img src="/figures/repo/most_exciting_stimuli/mouseM_neuron050_grating_center_generated_video_surround.gif" alt="Generated video surround"></td>
+    </tr>
+  </tbody>
+</table>
 
-[most_exciting_stimulus/README.md](figures/repo/most_exciting_stimuli/README.md) show more examples of model-selected and model-generated most exciting stimuli (MEIs, MEVs).
+[most_exciting_stimulus/README.md](figures/repo/most_exciting_stimuli/README.md) shows more examples of model-selected and model-generated most exciting center surround stimuli (MEIs, MEVs).
 
 ---
 

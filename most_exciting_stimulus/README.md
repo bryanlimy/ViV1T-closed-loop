@@ -1,8 +1,7 @@
 # Using ViV1T to generate stimuli and test hypotheses
 
-In this folder you can find the code to generate most-exciting stimuli using ViV1T (Figure 5 and Supplemental Figure 4).
-Note that we typically center the generated stimuli on the receptive field of the neuron, thus you need to have those extracted somehow.
-We use the model-estimated receptive fields (aRF), see [tuning_retinotopy/README.md](../tuning_retinotopy/README.md).
+In this folder you can find the code to generate most-exciting stimuli using ViV1T (**Figure 5** and **Supplemental Figure 4**).
+Note that we center the stimuli to the estimated receptive field of the neuron. We use the model-estimated artificial receptive fields (aRF), see [tuning_retinotopy/README.md](../tuning_retinotopy/README.md).
 
 Let us first look at some examples from the paper.
 Here in particular, we will focus on contextual modulation at the neuron level.
