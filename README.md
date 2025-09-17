@@ -76,7 +76,7 @@ ViV1T/
   ```bash
   conda create -n viv1t python=3.12
   ```
-- Activate `viv1t` virtual environment
+- Activate the `viv1t` virtual environment
   ```bash
   conda activate viv1t
   ```
