@@ -30,6 +30,7 @@ keywords = [
 ]
 
 dependencies = [
+    "setuptools>=70.1.0,<80.0",
     "torch==2.8.0",
     "torchvision",
     "ray[train]",
@@ -65,7 +66,9 @@ dependencies = [
 ]
 
 [build-system]
-requires = ["setuptools>=62.0"]
+requires = [
+    "setuptools>=70.1.0,<80.0",
+]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
