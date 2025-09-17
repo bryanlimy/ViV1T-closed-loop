@@ -10,7 +10,7 @@ Contributors: [Bryan M. Li](https://bryanli.io), [Wolf De Wulf](https://wulfdewo
 |---|---|--------------------------------------------------------------------------------------------------------------------------|---|
 | ![Grating center](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center.gif) | ![Grating video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_grating_video_surround.gif) | ![Natural video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_natural_video_surround.gif) | ![Generated video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_generated_video_surround.gif) |
 
-[README](link) show more examples of model-selected and model-generated most exciting stimuli (MEIs, MEVs).
+[most_exciting_stimulus/README.md](figures/repo/most_exciting_stimuli/README.md) show more examples of model-selected and model-generated most exciting stimuli (MEIs, MEVs).
 
 ---
 
