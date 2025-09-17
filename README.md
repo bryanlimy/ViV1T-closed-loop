@@ -6,6 +6,14 @@ Contributors: [Bryan M. Li](https://bryanli.io), [Wolf De Wulf](https://wulfdewo
 
 ![ViV1T](figures/repo/figure1.png)
 
+| Grating center | Grating video | Natural video | Generated video |
+|---|---|---|---|
+| ![Grating center](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center.gif) | ![Grating video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_grating_video_surround.gif) | ![Natural video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center.gif) | ![Generated video surround](figures/repo/most_exciting_stimuli/mouseL_neuron071_grating_center_generated_video_surround.gif) |
+
+[README](link) show more examples of model-selected and model-generated most exciting stimuli (MEIs, MEVs).
+
+---
+
 ## Acknowledgments
 
 We sincerely thank [Turishcheva et al.](https://arxiv.org/abs/2305.19654) for organizing the [Sensorium 2023 challenge](https://www.sensorium-competition.net/) and for making their high-quality, large-scale mouse V1 recordings publicly available. The structure of this codebase is based on and inspired by [bryanlimy/V1T](https://github.com/bryanlimy/V1T), [bryanlimy/ViV1T](https://github.com/bryanlimy/ViV1T), [ecker-lab/sensorium_2023](https://github.com/ecker-lab/sensorium_2023), [sinzlab/neuralpredictors](https://github.com/sinzlab/neuralpredictors) and [sinzlab/nnfabrik](https://github.com/sinzlab/nnfabrik). 

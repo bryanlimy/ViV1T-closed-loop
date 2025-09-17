@@ -22,7 +22,7 @@ VIDEO_H, VIDEO_W = 36, 64  # resolution of the video
 VIDEO_MIN, VIDEO_MAX = 0, 255.0  # min and max pixel values
 FPS = 30
 
-DPI = 240
+DPI = 180
 FONTSIZE = 9
 
 OUTPUT_DIR = Path("../../runs/rochefort-lab/vivit")
@@ -303,7 +303,7 @@ def main():
                     video=data["video"][i],
                     response=data["response"][i],
                     filename=PLOT_DIR
-                    / f'mouse{mouse_id}_neuron{neuron:03d}_{data["stimulus_name"][i]}.mp4',
+                    / f'mouse{mouse_id}_neuron{neuron:03d}_{data["stimulus_name"][i]}.gif',
                     mouse_id=mouse_id,
                     neuron=neuron,
                     max_value=max_value,
