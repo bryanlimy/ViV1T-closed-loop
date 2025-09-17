@@ -113,7 +113,7 @@ ViV1T-closed-loop/
   ```
 - Train the default ViV1T model. The model checkpoints and logs will be stored in `runs/001_viv1t`.
   ```
-  train.py --data_dir=data/ --output_dir=runs/001_viv1t --core=vivit --core_behavior_mode=2 --core_use_causal_attention --core_parallel_attention --readout=gaussian --output_mode=1 --schedule_free --compile --batch_size=1 --wandb=vivit --clear_output_dir
+  python train.py --data_dir=data/ --output_dir=runs/001_viv1t --core=vivit --core_behavior_mode=2 --core_use_causal_attention --core_parallel_attention --readout=gaussian --output_mode=1 --schedule_free --compile --batch_size=1 --wandb=vivit --clear_output_dir
   ```
 - Check `--help` for all available arguments
   ```
