@@ -36,7 +36,7 @@ The codebase is divided into its own (mostly) self-contained folders to evaluate
 - Check [.gitignore](.gitignore) for the ignored files.
 
 ```
-ViV1T/
+ViV1T-closed-loop/
   data/
     sensorium/
     rochefort-lab/
