@@ -1,9 +1,23 @@
 # Movie-trained transformer reveals novel response properties to dynamic stimuli in mouse visual cortex
 
-Code for the ViV1T model and paper "Movie-trained transformer reveals novel response properties to dynamic stimuli in mouse visual cortex".
+Code for the ViV1T model and paper "[Movie-trained transformer reveals novel response properties to dynamic stimuli in mouse visual cortex](https://www.biorxiv.org/content/10.1101/2025.09.16.676524v1)".
 
-Contributors: [Bryan M. Li](https://bryanli.io), [Wolf De Wulf](https://wulfdewolf.github.io/), [Danai Katsanevaki](https://sidb.org.uk/nathalie-rochefort/danai-katsanevaki), [Arno Onken](https://homepages.inf.ed.ac.uk/aonken/), [Nathalie L. Rochefort](https://rochefortlab.co.uk/).
+Authors: [Bryan M. Li](https://bryanli.io), [Wolf De Wulf](https://wulfdewolf.github.io/), [Danai Katsanevaki](https://sidb.org.uk/nathalie-rochefort/danai-katsanevaki), [Arno Onken](https://homepages.inf.ed.ac.uk/aonken/), [Nathalie L. Rochefort](https://rochefortlab.co.uk/).
 
+```bibtex
+@article {li2025movie,
+  author = {Li, Bryan M and De Wulf, Wolf and Katsanevaki, Danai and Onken, Arno and Rochefort, Nathalie L},
+  title = {Movie-trained transformer reveals novel response properties to dynamic stimuli in mouse visual cortex},
+  elocation-id = {2025.09.16.676524},
+  year = {2025},
+  doi = {10.1101/2025.09.16.676524},
+  publisher = {Cold Spring Harbor Laboratory},
+  URL = {https://www.biorxiv.org/content/early/2025/09/17/2025.09.16.676524},
+  eprint = {https://www.biorxiv.org/content/early/2025/09/17/2025.09.16.676524.full.pdf},
+  journal = {bioRxiv}
+}
+
+```
 
 <img src="figures/repo/figure1.png" alt="Figure 1">
 
