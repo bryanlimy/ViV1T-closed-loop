@@ -1,6 +1,6 @@
 # Movie-trained transformer reveals novel response properties to dynamic stimuli in mouse visual cortex
 
-Code for the ViV1T model and paper "[Movie-trained transformer reveals novel response properties to dynamic stimuli in mouse visual cortex](https://www.biorxiv.org/content/10.1101/2025.09.16.676524v1)".
+Code for the ViV1T model and paper "[Movie-trained transformer reveals novel response properties to dynamic stimuli in mouse visual cortex](https://www.biorxiv.org/content/10.1101/2025.09.16.676524)".
 
 Authors: [Bryan M. Li](https://bryanli.io), [Wolf De Wulf](https://wulfdewolf.github.io/), [Danai Katsanevaki](https://sidb.org.uk/nathalie-rochefort/danai-katsanevaki), [Arno Onken](https://homepages.inf.ed.ac.uk/aonken/), [Nathalie L. Rochefort](https://rochefortlab.co.uk/).
 
