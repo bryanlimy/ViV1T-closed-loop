@@ -59,7 +59,7 @@ The codebase is divided into its own (mostly) self-contained folders to evaluate
 - [train.py](train.py) is the main pipeline to train the model.
 - [predict.py](predict.py) is the code to inference the trained model on the test set(s).
 - [viv1t/](viv1t) contains code to construct the model, save and load model weights, compute various metrics to evaluate the model, generate low-dimensional parametric stimuli, etc.
-- [misc/](misc) contains scripts for extracting metadata and visualisations that are useful for all the analyses. See [misc/README.md](misc/README.md), you might find some of the scripts helpful too.
+- [misc/](misc) contains scripts for extracting metadata and visualisations that are useful for all the analyses. See [misc/README.md](misc/README.md); you may also find some of the scripts helpful.
 - [tuning_retinotopy/](tuning_retinotopy) estimates the artificial receptive fields (aRFs) of each _in silico_ neuron the models were trained on (**Figure 7**). The aRFs are used to estimate the centre of the receptive field for subsequent analyses. See [tuning_retinotopy/README.md](tuning_retinotopy/README.md).
 - [tuning_direction/](tuning_direction) evaluates the direction tuning and spatial organisation of the trained models (**Figure 2**). See [tuning_direction/README.md](tuning_direction/README.md).
 - [tuning_contextual_modulation/](tuning_contextual_modulation) evaluates the centre-surround contextual modulation properties of the trained models, mostly replicating the _in vivo_ experiments from [Keller et al. 2020](https://www.cell.com/neuron/fulltext/S0896-6273(20)30891-6) using the movie-trained model (**Figure 2**). See [tuning_contextual_modulation/README.md](tuning_contextual_modulation/README.md).
@@ -102,6 +102,7 @@ ViV1T-closed-loop/
   train.py
   ...
 ```
+
 ---
 
 ## Installation
@@ -219,3 +220,7 @@ ViV1T-closed-loop/
                           3: SoftPlus activation with learnable beta value
                           4: sigmoid activation
   ```
+
+### Trained model weight
+- The model weights trained on the Sensorium 2023 challenge are available at [huggingface.co/bryanlimy/ViV1T-closed-loop](https://huggingface.co/bryanlimy/ViV1T-closed-loop) (**Figure 2**, **Figure 3**, **Supplemental Figure 1**, **Supplemental Figure 2** and **Supplemental Figure 3**).
+  
