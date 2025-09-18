@@ -1,0 +1,5 @@
+figures
+*.npz
+*.parquet
+*.npy
+*.pkl

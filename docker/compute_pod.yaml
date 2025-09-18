@@ -1,0 +1,85 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: bryan-1-
+  labels:
+    app: bryan-sensorium
+    eidf/user: bli-infk8s
+    kueue.x-k8s.io/queue-name: eidf029ns-user-queue
+spec:
+  completions: 1
+  parallelism: 1
+  template:
+    metadata:
+      name: bryan-sensorium
+      labels:
+        eidf/user: bli-infk8s
+        kueue.x-k8s.io/queue-name: eidf029ns-user-queue
+        kueue.x-k8s.io/priority-class: batch-workload-priority
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: bryan
+          image: bryanlimy/pytorch:v2.7.1
+          imagePullPolicy: IfNotPresent
+          command: ["zsh", "-c", "--"]
+          args:
+            # - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && python train.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/rochefort-lab/vivit/022_random_viv1t_VIPcre233_FOV1 --core=vivit --core_behavior_mode=2 --core_use_causal_attention --core_parallel_attention --core_lr=0.0 --readout=gaussian --output_mode=1 --schedule_free --compile --batch_size=1 --mouse_ids M --wandb=rochefort-lab --seed=123 --clear_output_dir
+            # - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && python train.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/rochefort-lab/vivit/025_causal_viv1t_VIPcre233_FOV2_finetune --core=vivit --core_behavior_mode=2 --core_use_causal_attention --core_parallel_attention --core_lr=0.00126 --pretrained_core=/home/storage/runs/vivit/204_causal_viv1t --readout=gaussian --output_mode=1 --schedule_free --compile --batch_size=1 --mouse_ids N --wandb=rochefort-lab --seed=1234 --clear_output_dir
+            # - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && cd tuning_retinotopy && python predict_noise.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/rochefort-lab/vivit/025_causal_viv1t_VIPcre233_FOV2_finetune --precision bf16 --compile --evaluate --mouse_ids N --batch_size=8
+            # - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && cd most_exciting_stimulus && cd single_neuron && cd natural_stimulus && python predict_natural_center.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/rochefort-lab/vivit/025_causal_viv1t_VIPcre233_FOV2_finetune --mouse_ids N --step 10 --evaluate --stimulus_size=20 --use_RF_center --batch_size=4 --compile --precision=bf16 --static --animate
+            # - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && cd most_exciting_stimulus && cd single_neuron && cd natural_stimulus && python predict_natural_surround.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/rochefort-lab/vivit/025_causal_viv1t_VIPcre233_FOV2_finetune --mouse_ids N --step 10 --stimulus_size=20 --outer_stimulus_size=60 --use_RF_center --batch_size=8 --compile --precision=bf16 --static_center --static_surround --animate
+            # - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && cd most_exciting_stimulus && cd single_neuron && cd natural_stimulus && python predict_natural_surround.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/rochefort-lab/vivit/025_causal_viv1t_VIPcre233_FOV2_finetune --mouse_ids N --step 10 --stimulus_size=20 --outer_stimulus_size=60 --use_RF_center --batch_size=8 --compile --precision=bf16 --static_center --animate
+            # - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && cd most_exciting_stimulus && cd single_neuron && cd grating_stimulus && python predict_center_surround_gratings.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/rochefort-lab/vivit/025_causal_viv1t_VIPcre233_FOV2_finetune --mouse_ids N --evaluate --outer_stimulus_size=60 --use_RF_center --batch_size=4 --compile --precision=bf16 --animate
+            # - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && cd most_exciting_stimulus && cd single_neuron && cd grating_stimulus && python predict_natural_surround_with_grating_center.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/rochefort-lab/vivit/025_causal_viv1t_VIPcre233_FOV2_finetune --mouse_ids N --step 10 --stimulus_size=20 --outer_stimulus_size=60 --use_RF_center --batch_size=4 --compile --precision=bf16 --animate
+            # - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && cd most_exciting_stimulus && cd single_neuron && python generate_center_surround.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/rochefort-lab/vivit/025_causal_viv1t_VIPcre233_FOV2_finetune --use_RF_center --stimulus_size=20 --outer_stimulus_size=60 --use_natural_center --natural_init --static_center --static_surround --mouse_ids N --precision=bf16 --compile --method=cutoff --save_dir=001_cutoff_natural_init_200_steps --num_steps=200
+            # - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && cd most_exciting_stimulus && cd single_neuron && python generate_center_surround.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/rochefort-lab/vivit/025_causal_viv1t_VIPcre233_FOV2_finetune --use_RF_center --stimulus_size=20 --outer_stimulus_size=60 --use_natural_center --natural_init --static_center --mouse_ids N --precision=bf16 --compile --method=cutoff --save_dir=001_cutoff_natural_init_200_steps --num_steps=200
+            # - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && cd most_exciting_stimulus && cd single_neuron && python generate_center_surround.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/rochefort-lab/vivit/025_causal_viv1t_VIPcre233_FOV2_finetune --use_RF_center --stimulus_size=20 --outer_stimulus_size=60 --use_grating_center --natural_init --mouse_ids N --precision=bf16 --compile --method=cutoff --save_dir=001_cutoff_natural_init_200_steps --num_steps=200
+            # - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && cd most_exciting_stimulus && cd population && cd natural_stimulus && python predict_natural_center.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/vivit/204_causal_viv1t --use_RF_center --stimulus_size=20 --mouse_ids A B C D E F G H I J --step=10 --precision=bf16 --compile --static --batch_size=8 --evaluate
+            # - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && cd most_exciting_stimulus && cd population && cd natural_stimulus && python predict_natural_surround.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/vivit/204_causal_viv1t --use_RF_center --stimulus_size=20 --outer_stimulus_size=60 --mouse_ids A B C D E F G H I J --step=10 --precision=bf16 --compile --static_center --static_surround --batch_size=8 --evaluate && python predict_natural_surround.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/vivit/204_causal_viv1t --use_RF_center --stimulus_size=20 --outer_stimulus_size=60 --mouse_ids A B C D E F G H I J --step=10 --precision=bf16 --compile --static_center --batch_size=8 --evaluate
+            # - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && cd most_exciting_stimulus && cd population && python generate_full_field_population.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/rochefort-lab/vivit/025_causal_viv1t_VIPcre233_FOV2_finetune --use_RF_center --outer_stimulus_size=60 --mouse_ids N --natural_init --compile --precision=bf16 --method=cutoff --save_dir=001_cutoff_natural_init_200_steps --num_steps=200 --static && python generate_full_field_population.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/rochefort-lab/vivit/025_causal_viv1t_VIPcre233_FOV2_finetune --use_RF_center --outer_stimulus_size=60 --mouse_ids N --natural_init --compile --precision=bf16 --method=cutoff --save_dir=001_cutoff_natural_init_200_steps --num_steps=200
+            - git clone "https://$GIT_TOKEN@github.com/bryanlimy/sensorium2023.git" --branch publication_figures && cd sensorium2023 && pip install --no-cache-dir -e . && cd most_exciting_stimulus && cd population && python generate_center_surround_population.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/vivit/204_causal_viv1t --use_RF_center --stimulus_size=20 --outer_stimulus_size=60 --mouse_ids A B C D E F G H I J --use_natural_center --natural_init --static_center --static_surround --compile --precision=bf16 --method=cutoff --save_dir=001_cutoff_natural_init_200_steps --num_steps=200 && python generate_center_surround_population.py --data_dir=/home/storage/data --output_dir=/home/storage/runs/vivit/204_causal_viv1t --use_RF_center --stimulus_size=20 --outer_stimulus_size=60 --mouse_ids A B C D E F G H I J --use_natural_center --natural_init --static_center --compile --precision=bf16 --method=cutoff --save_dir=001_cutoff_natural_init_200_steps --num_steps=200
+          env:
+            - name: WANDB_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: bryanli-wandb-key
+                  key: wandb_api_key
+            - name: GIT_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: bryanli-git-token
+                  key: git_token
+            - name: REDIS_PORT
+              value: "6379"
+            - name: OMP_NUM_THREADS
+              value: "8"
+            - name: TORCH_LOGS
+              value: "recompiles,graph_breaks"
+          volumeMounts:
+            - mountPath: /dev/shm
+              name: dshm
+            - mountPath: /home/storage
+              name: storage
+          resources:
+            requests:
+              cpu: 16
+              memory: 128Gi
+              nvidia.com/gpu: 1
+            limits:
+              cpu: 16
+              memory: 128Gi
+              nvidia.com/gpu: 1
+      volumes:
+        - name: dshm
+          emptyDir:
+            medium: Memory
+            sizeLimit: 100Gi
+        - name: storage
+          persistentVolumeClaim:
+            claimName: bryanli-pvc
+      nodeSelector:
+        # nvidia.com/gpu.product: NVIDIA-H200
+        nvidia.com/gpu.product: NVIDIA-H100-80GB-HBM3
+        # nvidia.com/gpu.product: NVIDIA-A100-SXM4-80GB
+        # nvidia.com/gpu.product: NVIDIA-A100-SXM4-40GB

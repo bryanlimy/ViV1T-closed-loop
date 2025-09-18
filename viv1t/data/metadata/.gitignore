@@ -1,0 +1,6 @@
+!statistics/*/*/*.npy
+!ood_features/*/*/*.npy
+!tuning/*/*.npy
+!neuron_coordinates/*.npy
+!stimulus_ids/*.npy
+!video_ids/*.npy
